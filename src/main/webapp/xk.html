@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>享看</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="images/xy.ico"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/xk.css">
+  <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+  <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+  <script type="text/javascript" src="easyui/jquery.min.js"></script>
+  <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="easyui/jquery.cookie.js"></script>
+</head>
+<body>
+
+  <!--顶部-->
+  <div class="top">
+      <div class="top_logo">
+        <img src="images/logo.jpg">
+      </div>
+      <div class="top_menu">
+	          <ul class="ul">
+	            <li class="xy_ssh"><a href="index.html">享悦</a></li>
+	            <li class="xl"><a href="xl.html">享聊</a></li>
+	            <li class="xk"><a href="xk.html">享看</a></li>
+	            <li class="xx"><a href="xx.html">享学</a></li>
+	            <li class="yj"><a href="yj.html">悦己</a></li>
+	          </ul>
+	      </div>
+      <div class="top_login">
+          <div class="login_word">
+              <div id="log">
+                <div class="register"><a href="register.html" class="register_word">注册</a></div>
+              <span class="login">亲，请先<a href="login.html">登录</a></span>
+              </div>
+              <span id="account"></span>
+	          <span id="quit">退出</span>
+          </div>
+      </div>
+  </div>
+
+  <!--中部-->
+  <div id="main">
+ <div id="headDiv" style="margin-bottom:40px"><b>校园风景</b></div>
+  <div id="mainDiv">
+    <table style="width: 100%;height: 350px">
+      <tr align="center">
+       <td><a href="list_jy" target="_blank">九江学院</a></td>
+       <td><a href="list_cx" target="_blank">九江职业技术学院</a></td>
+       <td><a href="list_zd" target="_blank">九江职业大学</a></td>
+       <td><a href="list_jc" target="_blank">江西财经职业学院</a></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>  
+      <tr>
+       <td><a href="list_jy" target="_blank"><img src="images/jy.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+       <td><a href="list_cx" target="_blank"><img src="images/cx.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+       <td><a href="list_zd" target="_blank"><img src="images/zd.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+       <td><a href="list_jc" target="_blank"><img src="images/jc.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      </tr> 
+    </table>
+  </div>
+  </div>
+  <div style="text-align:right;size:30px" >
+		<a href="javascript:void(0)" style=" width:100px;height:50px;background:rgb(170,228,241)" class="easyui-linkbutton" onclick="$('#w').window('open')"><h4><b>上传</b></h4></a>
+	</div>
+	<div id="w" class="easyui-window" title="选择学校" data-options="modal:true,closed:true,iconCls:'icon-print'" style="width:500px;height:300px;padding:10px;">
+		<h3 align="center" style="color:#000"><b>请选择图片对应的学校</b></h3><br/>
+		<h4 align="center"><a href="xk/uploadjy.jsp" target="_blank">九江学院</a></h4><br/>
+		<h4 align="center"><a href="xk/uploadcx.jsp" target="_blank">九江职业技术学院</a></h4><br/>
+	    <h4 align="center"><a href="xk/uploadzd.jsp" target="_blank">九江职业大学</a></h4><br/>
+		<h4 align="center"><a href="xk/uploadjc.jsp" target="_blank">江西财经职业学院</a></h4>
+	</div>
+	
+    <!--底部-->
+    <div align="center" style="font-size: 20px;background: rgb(133,169,289);">
+			<a href="javascript:void(0);">关于享悦</a>|
+			<a href="javascript:void(0);">服务条款</a>|
+			<a href="javascript:void(0);">用户服务协议</a>|
+			<a href="javascript:void(0);">隐私政策</a>|
+			<a href="javascript:void(0);">权利声明</a>|
+			<a href="javascript:void(0);">广告服务</a>|
+			<a href="javascript:void(0);">客服中心</a>|
+			<a href="javascript:void(0);">网站导航</a>
+		<br/>"享悦"由宏志组研发并拥有对应的版权
+		<br/>享你所想，悦你所乐
+    </div>
+    <script type="text/javascript" src="js/xk.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>享聊</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="images/xy.ico"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/xl.css">
+  <script type="text/javascript" src="easyui/jquery.min.js"></script>
+  <script type="text/javascript" src="easyui/jquery.cookie.js"></script>
+</head>
+<body>
+  <!--顶部-->
+  <div class="top">
+	      <div class="top_logo">
+	        <img src="images/logo.jpg">
+	      </div>
+	      <div class="top_menu">
+	          <ul class="ul">
+	            <li class="xy_ssh_oracle_maven"><a href="index.html">享悦</a></li>
+	            <li class="xl"><a href="xl.html">享聊</a></li>
+	            <li class="xk"><a href="xk.html">享看</a></li>
+	            <li class="xx"><a href="xx.html">享学</a></li>
+	            <li class="yj"><a href="yj.html">悦己</a></li>
+	          </ul>
+	      </div>
+	      <div class="top_login">
+	          <div class="login_word">
+	              <div id="log">
+	                <div class="register"><a href="register.html" class="register_word">注册</a></div>
+	              <span class="login">亲，请先<a href="login.html">登录</a></span>
+	              </div>
+	              <div id="use_id"></div>
+	              <span id="account"></span>
+	              <span id="quit">退出</span>
+	          </div>
+	          <div id="seach">
+	          	<input type="text" placeholder="请输入您要搜索的内容..." id="condition">
+				<button type="submit" id="bt2">搜索</button>
+				<button type="submit" id="col1">搜索</button>
+			</div>
+	      </div>
+  </div>
+
+  <!--中部-->
+  	<!--全部动态 -->
+		<div class="list-group" id="center-left">
+		  <a href="xl.html" class="list-group-item active" id="one">全部动态</a>
+		  <a href="#" class="list-group-item" id="two">我的收藏</a>
+		</div>
+		<div id="center-right">
+			<div id="center-top">
+				<form action="/xy_ssh_oracle_maven/Talk_add" enctype="multipart/form-data" method="post">
+				<textarea placeholder="试着说出你的心情..." id="talkcontent" name="talkcontent"></textarea>
+				<input type="file" name="file" value="上传">
+				<input class="use_id" name="use_id">
+				<input type="submit" value="发布" class="btn btn-success" id="bt3"></form>
+			</div>
+			<div id="center-bottom"></div>
+		</div>
+		
+	<!--我的收藏 -->
+	<div id="collectcontent"></div>
+	<br><br><br><br>
+    <script type="text/javascript" src="js/xl.js"></script>
+</body>
+</html>
